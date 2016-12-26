@@ -1,7 +1,12 @@
+/*Clears all default margins*/
+* {
+	margin: 0px;
+}
 body {
 	background-image: url("../patterns/seigaiha-styled.png");
 	background-repeat: repeat;
 }
+/* Theme Styling */
 #container {
 	width: 960px; 
 	margin: 0px auto;
@@ -10,21 +15,80 @@ body {
 	position: relative;
 	height: 230px;
 }
+/* Navigation Styling*/
 #nav {
-	display: inline-block;
-	margin: 10px 0px;
-	background-color: white;
-	width: 100%;
+	--p: 15px;
+    background-color: white;
+    display: block;
+    height: 50px;
+    margin-bottom: 0px;
+    margin-top: 20px;
+    padding: 0 var(--p);
+    position: relative;
+    right: var(--p);
+    text-align: center;
+    width: 100%;
 }
+#nav:before,
+#nav:after {
+    background-color: inherit;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: calc(var(--p)/2);
+    width: var(--p);
+    filter: brightness(.5);
+    z-index: -1;
+}
+
+#nav:before {
+    left: 0;
+    transform: skewy(45deg);
+}
+
+#nav:after {
+    right: 0;
+    transform: skewy(-45deg);
+}
+ul {
+	list-style-type: none;
+	padding: 9px;
+}
+li {
+	float: left;
+	width: 100px;
+	margin: 5px 20px;
+}
+a {
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	-webkit-transition: all 0.5s ease-in-out;
+	position: relative;
+    moz-transition: all 0.5s ease-in-out;
+    padding: 0px 35px;
+    width: 100px;
+    display: inline;
+    margin: 4px;
+}
+a:link {
+	color: black;
+}
+a:hover {
+	color: white;
+	background-color: #cc3333;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 20px 50px;
+	position: relative;
+}
+/* Content Styling*/
 #content {
 	background-color: #ffcc66;
 	font-family: 'Roboto', sans-serif;
+	padding: 20px;
 }
 #content p {
-	margin: 0px;
-}
-#footer {
-	
+	margin: 16px;
 }
 table {
 	background-color: #d73c37;
@@ -36,7 +100,7 @@ table {
 	width: 65%;
 	position: absolute;
 	z-index: -1;
-	left: 15%;
+	left: 18%;
 	opacity: 0.7;
 }
 #header p {
@@ -49,23 +113,33 @@ table {
 	top: 70px;
 	left: 15%;
 }
-/* Navigation Styling */
-ul {
-	list-style-type: none;
-	margin: 0px;
+/*Footer Styling*/
+#footer {
+	background-color: #ee6146;
+	padding: 12px;
 }
-li {
-	float: left;
-	margin: 5px 15px;
+#footer p {
+	text-align: center;
 }
-a {
-	text-decoration: none;
-	font-family: 'Roboto', sans-serif;
+#style-menu {
+	display: none;
+	z-index: 1;
+	position: relative;
 }
-a:link {
-	color: black;
+#style-menu li {
+	color: white;
+	position: absolute;
+	padding: 10px;
 }
-a:hover {
-	color: gray;
-	transition-duration: 0.5s;
+/*Button Styling*/
+/*button {
+    webkit-transition: all 0.5s ease-in-out;
+    moz-transition: all 0.5s ease-in-out;
+    transition-duration: 0.5s;
 }
+button:hover {
+
+	background-color: red;
+	padding: 15px;
+}
+*/
