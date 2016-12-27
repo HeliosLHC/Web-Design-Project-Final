@@ -7,20 +7,36 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
         <!--MUI CSS Framework-->
-        <link href="//cdn.muicss.com/mui-0.9.7/css/mui.min.css" rel="stylesheet" type="text/css" />
-		<script src="//cdn.muicss.com/mui-0.9.7/js/mui.min.js"></script>
+        <link href="https://cdn.muicss.com/mui-0.9.7/css/mui.min.css" rel="stylesheet" type="text/css" />
+		<script src="https://cdn.muicss.com/mui-0.9.7/js/mui.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<!-- Font Base -->
+		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<!-- Favicons -->
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+		<link rel="manifest" href="/manifest.json">
+		<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+		<meta name="theme-color" content="#ffffff">
+		<!-- Theme Changer -->
+		<script src="js/cookie.js"></script>
+		<script type="text/javascript" src="js/theme-loader.js"></script>
+		<!-- Deprecated
+		<script type="text/javascript" src="js/theme-changer.js"></script>
+		-->
+		<script type="text/javascript" src="js/theme-check.js" ></script>
     </head>
     <body>
         <div id="container">
 			<div id="header">
-				<img src="./design-images/chinese-dragon.png" id="header-dragon">
-				<p>Descendant of the East</p>
+				<img src="./images/chinese-dragon.png" id="header-dragon">
+				<p class="text-shadow">Descendant of the East</p>
 			</div>
 
 			<div id="nav">
@@ -40,6 +56,9 @@
 					<li>
 						<a href="music.html">Music</a>
 					</li>
+					<li>
+						<a href="about.html">About</a>
+					</li>
 				</ul>
 			</div>
 			<div id="content">
@@ -48,18 +67,23 @@
 				</div>
 				<h1>Welcome</h1>
 				<p>Welcome to Descendants of the East blog where I explain what makes up my heritage as an Chinese Asian American.</p>
-			</div>
-			<!--<video src="video/chinesenewyearpromo.mp4" width="1280" height="720" controls=""></video>-->
+				<h1>Happy New Year!</h1>
+				<video src="video/chinesenewyearpromo.mp4" controls=""></video>
+			</div> 
 			<div id="footer">
 				<p>Copyright &copy; 2016 Matthew Cen</p>
-				<ul id="style-menu">
-					<li><p id="seigaiha">Seigaiha</p></li>
-					<li><p id="seigaiha-dark">Seigaiha Dark</p></li>
-					<li><p id="red-dragon">Red Dragon</p></li>
-				</ul>
-				<button class="mui-btn mui-btn--danger">
-					Test
-				</button>
+				<div class="mui-dropdown">
+					<button class="mui-btn mui-btn--danger" data-mui-toggle="dropdown" type="button">
+						Website Theme
+						<span class="mui-caret"></span>
+						<span class="mui-btn__ripple-container"></span>
+					</button>
+					<ul class="mui-dropdown__menu">
+						<li><a class="theme-menu">Seigaiha</a></li>
+						<li><a class="theme-menu">Seigaiha-Dark</a></li>
+						<li><a class="theme-menu">Royal</a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		
@@ -67,25 +91,6 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
-        <script type="text/javascript">
-				$(document).ready(function(){
-				    $("#seigaiha").click(function(){
-					        $("body").css( 'background-image',"url('patterns/seigaiha.png')");
-					});
-				});	
-				$(document).ready(function(){
-				    $("#seigaiha-dark").click(function(){
-					        $("body").css( 'background-image',"url('patterns/seigaiha-styled.png')");
-					});
-				});	
-		</script>
-		<script type="text/javascript">
-			$(document).ready(function(){
-				    $("button").click(function(){
-					        $("#style-menu").css( 'display',"block");
-					});
-				});	
-		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=

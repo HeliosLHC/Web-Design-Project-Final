@@ -3,8 +3,8 @@
 	margin: 0px;
 }
 body {
-	background-image: url("../patterns/seigaiha-styled.png");
 	background-repeat: repeat;
+	font-family: "Roboto", sans-serif;
 }
 /* Theme Styling */
 #container {
@@ -28,6 +28,7 @@ body {
     right: var(--p);
     text-align: center;
     width: 100%;
+    box-sizing: content-box;
 }
 #nav:before,
 #nav:after {
@@ -40,6 +41,7 @@ body {
     width: var(--p);
     filter: brightness(.5);
     z-index: -1;
+
 }
 
 #nav:before {
@@ -51,18 +53,21 @@ body {
     right: 0;
     transform: skewy(-45deg);
 }
-ul {
+#nav ul {
 	list-style-type: none;
 	padding: 9px;
+	top: 0px;
+	display: block;
+	position: relative;
 }
-li {
+#nav li {
 	float: left;
 	width: 100px;
 	margin: 5px 20px;
 }
-a {
-	text-decoration: none;
+#nav a {
 	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
 	-webkit-transition: all 0.5s ease-in-out;
 	position: relative;
     moz-transition: all 0.5s ease-in-out;
@@ -70,16 +75,23 @@ a {
     width: 100px;
     display: inline;
     margin: 4px;
+    text-decoration: none;
 }
-a:link {
+#nav a:link {
 	color: black;
 }
-a:hover {
+#nav a:hover {
 	color: white;
 	background-color: #cc3333;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	padding: 20px 50px;
 	position: relative;
+}
+#nav a:active {
+	color: white;
+}
+#nav a:visited {
+	color: salmon;
 }
 /* Content Styling*/
 #content {
@@ -88,11 +100,35 @@ a:hover {
 	padding: 20px;
 }
 #content p {
-	margin: 16px;
+	margin: 2.5em;
+	font-size: 17px;
 }
-table {
-	background-color: #d73c37;
-	border: 1px solid #e6e0ae;
+#content h1 {
+	margin: 0.5em 0.5em;
+	border-left: 10px solid #ee6146;
+	padding: 0px 10px;
+	-webkit-transition: all 0.5s ease-in-out;
+    moz-transition: all 0.5s ease-in-out;
+}
+#content h1:hover {
+	border-left: 25px solid #ee6146;
+	transition-duration: 0.5s;
+	color: white;
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+#content img {
+	width: 80%;
 }
 /*Title Styling*/
 #header-dragon {
@@ -104,7 +140,6 @@ table {
 	opacity: 0.7;
 }
 #header p {
-	text-shadow: 3px 3px white;
 	margin: 0px;
 	font-size: 65px;
 	font-family: "Viner Hand ITC", Arial, sans-serif;
@@ -112,34 +147,101 @@ table {
 	position: absolute;
 	top: 70px;
 	left: 15%;
+	color: white;
+}
+table, th, td {
+	text-align: center;
+}
+td:nth-child(1) {
+	width: 30%;
+}
+th{
+	font-size: 25px;
+}
+audio {
+	width: 100%;
 }
 /*Footer Styling*/
 #footer {
+	/* Original Color
 	background-color: #ee6146;
-	padding: 12px;
+	*/
+	background-color: #fb7c37;
+	padding: 18px;
 }
 #footer p {
 	text-align: center;
-}
-#style-menu {
-	display: none;
-	z-index: 1;
-	position: relative;
-}
-#style-menu li {
+	width: 300px;
+	font-size: 18px;
 	color: white;
-	position: absolute;
-	padding: 10px;
+	margin: 0 auto;
 }
-/*Button Styling*/
-/*button {
-    webkit-transition: all 0.5s ease-in-out;
-    moz-transition: all 0.5s ease-in-out;
-    transition-duration: 0.5s;
+#footer ul {
+	list-style-type: none;
 }
-button:hover {
-
-	background-color: red;
-	padding: 15px;
+/*Janky fix for footer menu TODO FIX*/
+.mui-dropdown {
+	float: right;
+	top: -35px;
+	height: 100px;
 }
-*/
+.mui-dropdown, .mui-btn--danger {
+}
+/* Special Classes */
+.text-shadow {
+	text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0,0,0,.1),
+               0 0 5px rgba(0,0,0,.1),
+               0 1px 3px rgba(0,0,0,.3),
+               0 3px 5px rgba(0,0,0,.2),
+               0 5px 10px rgba(0,0,0,.25),
+               0 10px 10px rgba(0,0,0,.2),
+               0 20px 20px rgba(0,0,0,.15);
+}
+.box-shadow {
+	-webkit-box-shadow: 0px 13px 23px 3px rgba(0,0,0,0.75);
+    -box-shadow: 0px 13px 23px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 13px 23px 3px rgba(0,0,0,0.75);
+}
+.button-shadow {
+	box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 13px 1px #242424;
+	webkit-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 13px 1px #242424;
+	moz-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 13px 1px #242424;
+	o-box-shadow: inset 0px 0px 50px 0px #ABABAB,0px 0px 13px 1px #242424;
+}
+/* Content Image Styling */
+#content img {
+	margin: 0 auto;
+	border: 3px solid white;
+	transition-duration: 0.4s;
+	display: block;
+}
+#content img:hover {
+	-webkit-box-shadow: 0px 13px 23px 3px rgba(0,0,0,0.75);
+    moz-box-shadow: 0px 13px 23px 3px rgba(0,0,0,0.75);
+	box-shadow: 0px 13px 23px 3px rgba(0,0,0,0.75);
+	width: 90%;
+}
+figcaption {
+	color: white;
+	font-size: 16px;
+	text-align: center;
+}
+video {
+	width: 100%;
+	height: 100%;
+}
+/* Themes */
+body.style-Seigaiha { 
+	background-image: url("../patterns/seigaiha.png")
+}
+body.style-Seigaiha-Dark { 
+	background-image: url("../patterns/seigaiha-styled.png") 
+}
+body.style-Royal { 
+	background-image: url("../patterns/golden-swirls2.png") 
+}
