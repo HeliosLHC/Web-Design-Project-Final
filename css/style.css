@@ -3,6 +3,7 @@
 	margin: 0px;
 }
 body {
+	background-image: url("../patterns/seigaiha.png");
 	background-repeat: repeat;
 	font-family: "Roboto", sans-serif;
 }
