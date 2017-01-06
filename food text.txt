@@ -1,8 +1,7 @@
 ﻿Egg Custard is one of the traditonal snacks served in China and can be easily found in Chinatowns and China alike.
 It's a common dim sum that is made from a soft flaky outer shell and the inside is filled with egg custard giving it its distinct yellow color.
 
-Moon cake is a delicacy usually eaten during the Mid Autumn Festival. The cake is made out of an waxy outer shell with the inside filled with either red bean or lotus seed paste. The moon cake is most often found in Southern China is regions such as Guangzhou (where my family originates from) and Hong Kong
-It is an traditional snack eaten by many who celebrate this holiday including my family. 
+Moon cake is a delicacy usually eaten during the Mid Autumn Festival. The cake is made out of an waxy outer shell with the inside filled with either red bean or lotus seed paste. The moon cake is most often found in Southern China is regions such as Guangzhou (where my family originates from) and Hong Kong. It is an traditional snack eaten by many who celebrate this holiday including my family. 
 
 Peking Duck is a delicacy enjoyed by many in China and overseas and is a must have for anyone who wishes to have a taste of Chinese dishes.
 Its name originates from the city of Beijieng (also know as Peking) where the dish was invented.
@@ -26,3 +25,12 @@ Music
 
 Guangling San - Composed by poet Xi Kang (223AD-262AD)
 Ambush from all Sides (十面埋伏) originating from a battle in 202B.C. at Gaixia during the war between the states of Chu and Han. It is a classical piece that is played on the chinese lute, a common instrument during the time period.
+
+About
+	My name in Matthew Cen and I'm a developer, programmer, systems administrator, and network engineer. I created this website with the intent to showcase the cultural components of my chinese heritage
+
+
+This website is created from XHTML, HTML 5, CSS 3, LESS, SCSS, Javascript, Jquery
+Frameworks used in this website included Normalize.css and MUI.css with fonts provided thanks to Google Fonts.
+Analytics is provided with the help of Google Analytics and Cloudflare Analytics
+The website is hosted on a full LEMP stack production environment running on
