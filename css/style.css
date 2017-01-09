@@ -244,3 +244,12 @@ body.style-Seigaiha-Dark {
 body.style-Royal { 
 	background-image: url("../patterns/golden-swirls2.png") 
 }
+/* Google Maps Embed Styling */
+iframe {
+	margin: 0 auto;
+	display: block;
+}
+/* Audio Styling */
+audio {
+	margin: 10px 0px;
+}
