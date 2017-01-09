@@ -34,3 +34,6 @@ This website is created from XHTML, HTML 5, CSS 3, LESS, SCSS, Javascript, Jquer
 Frameworks used in this website included Normalize.css and MUI.css with fonts provided thanks to Google Fonts.
 Analytics is provided with the help of Google Analytics and Cloudflare Analytics
 The website is hosted on a full LEMP stack production environment running on
+
+painting of Bamboos are extremely common in Chinese artwork as it is an iconic and mystical plant.
+http://www.chinaonlinemuseum.com/painting-orchid.php
