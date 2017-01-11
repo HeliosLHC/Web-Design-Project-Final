@@ -246,10 +246,25 @@ body.style-Royal {
 }
 /* Google Maps Embed Styling */
 iframe {
-	margin: 0 auto;
+	margin: 10px auto;
 	display: block;
 }
 /* Audio Styling */
 audio {
 	margin: 10px 0px;
+}
+/* Flexbox Styling */
+.flex-container {
+	flex-wrap: wrap;
+	border: none;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+.flex-item {
+	width: 30% !important;
+	height: 30% !important;
+	margin: 20px !important;
+	padding: 15px !important;
 }
