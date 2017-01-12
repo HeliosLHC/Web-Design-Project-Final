@@ -64,7 +64,7 @@ body {
 #nav li {
 	float: left;
 	width: 100px;
-	margin: 5px 20px;
+	margin: 5px 36px;
 }
 #nav a {
 	font-size: 18px;
@@ -128,6 +128,8 @@ body {
 }
 #content img {
 	width: 80%;
+	/* Max Viewport Percentage Height 
+	max-height: 50vh;*/
 }
 /*Title Styling*/
 #header-dragon {
