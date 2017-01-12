@@ -5,7 +5,7 @@ $(document).ready(function() {
                                 $("#header-dragon").css( 'opacity',"1")
                 }
         })
-$(document).ready( function() {
+$(document).ready(function() {
 if ( !$("body").hasClass("style-Royal")) {
                                 $("#header-dragon").attr('src', function(i, src) {return src.replace( 'ancient-chinese-building-scale2.png', 'chinese-dragon.png' );
                         })
