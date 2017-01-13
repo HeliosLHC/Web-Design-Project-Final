@@ -42,9 +42,7 @@ body {
     width: var(--p);
     filter: brightness(.5);
     z-index: -1;
-
 }
-
 #nav:before {
     left: 0;
     transform: skewy(45deg);
@@ -76,6 +74,8 @@ body {
     display: inline;
     margin: 4px;
     text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
 }
 #nav a:link {
 	color: black;
@@ -129,7 +129,7 @@ body {
 #content img {
 	width: auto;
     max-width: 90vh;
-    max-height: 60vh;
+    max-height: 80vh;
 }
 /*Title Styling*/
 #header-dragon {
@@ -150,6 +150,7 @@ body {
 	left: 15%;
 	color: white;
 }
+/* Table Styling - MUI.css override */
 table, th, td {
 	text-align: center;
 }
@@ -159,8 +160,13 @@ td:nth-child(1) {
 th{
 	font-size: 25px;
 }
+/* Media Elements Styling */
 audio {
 	width: 100%;
+}
+video {
+	width: 100%;
+	height: 100%;
 }
 /*Footer Styling*/
 #footer {
@@ -231,10 +237,6 @@ figcaption {
 	color: white;
 	font-size: 16px;
 	text-align: center;
-}
-video {
-	width: 100%;
-	height: 100%;
 }
 /* Themes */
 body.style-Seigaiha { 
