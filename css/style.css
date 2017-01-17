@@ -64,6 +64,10 @@ body {
 	width: 100px;
 	margin: 5px 36px;
 }
+a {
+	display: block;
+	text-align: center;
+}
 #nav a {
 	font-size: 18px;
 	-webkit-transition: all 0.5s ease-in-out;
